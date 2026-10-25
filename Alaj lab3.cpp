@@ -13,6 +13,7 @@ int main()
        //if (i > 10)
        //    break;
    }
+   
 }*/
 /* {
     int a, b;
@@ -44,7 +45,8 @@ int main()
         cout << "brak korelacji";
 
 }*/
-/* {
+
+ /* {
     double x, y;
     char opcja;
     cout << "podaj x:";
@@ -53,6 +55,8 @@ int main()
     cin >> y;
     cout << "podaj znak dla działania";
     cin >> opcja;
+    if (y == 0)
+        cout << "nie dzielimy przez 0" << endl;
     switch (opcja)
     {
     case '+':
@@ -67,46 +71,91 @@ int main()
     case'/':
         cout << x / y << endl;
         break;
-    case'0':
-        cout << "Nie dzielimy przez 0";
-        break;
+    
     }
 
 }*/
-double x, y;
-char opcja;
-{
-    while (true)
-    {
-        cout << "podaj x:";
-        cin >> x;
-        cout << "podaj y:";
-        cin >> y;
-        cout << "podaj znak dla działania";
-        cin >> opcja;
-        if (y == 0)
-            cout << "Nie dzielimy przez 0";
-        switch (opcja)
-        {
-          
-        case '+':
-            cout << x + y << endl;
-            break;
-        case '-':
-            cout << x - y << endl;
-            break;
-        case'*':
-            cout << x * y << endl;
-            break;
-        case'/':
-            cout << x / y << endl;
-            break;
-        
-        default:
-            return;
-        }
-    }
-}
+/* {
+	int i = 0;
+	while (true)
+	{
+		i++;
+		if (i == 200)
+		{
+			break;
+		}
+		if (i % 2 == 0)
+		{
+			continue;
+		}
+		cout << i << endl;
+	}
+
+}*/
+/* {
+	int n;
+	cout << "podaj n: ";
+	cin >> n;
+	for (int i=2;i<= sqrt(n); i++)
+		if (n % i == 0)
+		{
+			cout << "liczba ma dzielnik:" << i << endl;
+			break;
+		}
+
+
+}*/
+
+/* {
+	int a, b, c;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	if ((a >= b)&&(a >= c))
+	{
+		cout << "najwieksza liczba to " << a;
+
+	}
+	else if ((b >= a)&& (b>= c))
+	{
+		cout << "najwieksza liczba to " << b;
+	}
+	else if ((c >= a) && (c >= b))
+	{
+		cout << "najwieksza liczba to " << c;
+	}
+
+
+
+}*/
+/* {
+	int suma=0;
+	for (int i = 1;i <= 100;i++)
+	{
+		if (i % 3 == 0)
+		{
+			continue;
+		}
+		suma += i;
+	}
+	cout << "Suma wynosi: " << suma;
+	return 0;
+}*/
+/* {
+	int i=1;
+	while (true)
+	{
+		if (i % 7 == 0 && i > 50)
+		{
+			cout << i;
+			break;
+		}
+		i++;
+	}
+}*/
+
+
+
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
